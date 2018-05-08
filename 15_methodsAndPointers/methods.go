@@ -17,7 +17,7 @@ func (v Vertex) Abs() float64 {
 	return math.Sqrt(v.X*v.X + v.Y*v.Y)
 }
 
-//can be defined on no-struct types
+//can be defined on non-struct types
 //but only on types declared in same package
 type MyFloat float64
 
