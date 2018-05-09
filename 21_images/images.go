@@ -19,6 +19,7 @@ func (m *MyImage) Bounds() image.Rectangle {
 	return image.Rect(0, 0, m.W, m.H)
 }
 
+//shamelessly copied
 func (m *MyImage) At(x, y int) color.Color {
 	return color.RGBA{uint8(x) ^ uint8(y), uint8(x) ^ uint8(y), 255, 255}
 }
